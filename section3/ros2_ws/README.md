@@ -27,3 +27,9 @@ chmod +x my_first_node.py
 ## Run with ROS2
 ### Setup bash
 source ~/.bashrc
+
+# C++ Node
+## Add path to ROS2 Instalaation
+"opt/ros/humble/include/**"
+
+## edit CMakeLists.txt
