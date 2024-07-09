@@ -115,7 +115,7 @@ source ~/.bashrc
 ```
 
 ## Create Node in Python
-
+Make sure you are in /src folder:
 ### Create a New Package
 ```bash
 ros2 pkg create --build-type ament_python my_py_pkg
