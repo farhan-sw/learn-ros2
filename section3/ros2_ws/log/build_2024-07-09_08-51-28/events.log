@@ -1,0 +1,121 @@
+[0.000000] (-) TimerEvent: {}
+[0.000256] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000378] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000402] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.004733] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.005069] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.005650] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg', '--', '-j16', '-l16'], 'cwd': '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farhan-sw'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farhan-sw'), ('OLDPWD', '/home/farhan-sw'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1142'), ('SYSTEMD_EXEC_PID', '1638'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4803'), ('COLCON_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farhan-sw'), ('JOURNAL_STREAM', '8:32694'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farhan-sw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Voodoo:@/tmp/.ICE-unix/1603,unix/Voodoo:/tmp/.ICE-unix/1603'), ('INVOCATION_ID', '9c9bedc99bce4f9688823b72c9588c51'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:51a4217c-8eae-409b-a36a-cb2edb41e5c8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.033671] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target number_counter\x1b[0m\n'}
+[0.042032] (my_cpp_pkg) StdoutLine: {'line': b'[ 25%] Built target cpp_node\n'}
+[0.042187] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] Built target smartphone\n'}
+[0.042247] (my_cpp_pkg) StdoutLine: {'line': b'[ 75%] Built target robot_news_station\n'}
+[0.044303] (my_cpp_pkg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o\x1b[0m\n'}
+[0.099840] (-) TimerEvent: {}
+[0.200195] (-) TimerEvent: {}
+[0.300511] (-) TimerEvent: {}
+[0.400859] (-) TimerEvent: {}
+[0.501307] (-) TimerEvent: {}
+[0.601661] (-) TimerEvent: {}
+[0.701939] (-) TimerEvent: {}
+[0.802213] (-) TimerEvent: {}
+[0.902482] (-) TimerEvent: {}
+[1.002789] (-) TimerEvent: {}
+[1.103093] (-) TimerEvent: {}
+[1.203399] (-) TimerEvent: {}
+[1.303737] (-) TimerEvent: {}
+[1.404114] (-) TimerEvent: {}
+[1.504442] (-) TimerEvent: {}
+[1.519100] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[1.519257] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.519297] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.519330] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.519362] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.519394] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.519425] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.519457] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.519487] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.519523] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.519554] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.519584] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:1\x1b[m\x1b[K:\n'}
+[1.519616] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid number_counter_node::callbackNumber(example_interfaces::msg::Int64_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.519649] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:29:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces::msg::Int64_<std::allocator<void> >::_data_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.519684] (my_cpp_pkg) StderrLine: {'line': b'   29 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Number Received: %d"\x1b[m\x1b[K, \x1b[32m\x1b[Kmsg->data\x1b[m\x1b[K);\n'}
+[1.519716] (my_cpp_pkg) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.519746] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                     \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[1.519777] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                     \x1b[32m\x1b[Kexample_interfaces::msg::Int64_<std::allocator<void> >::_data_type {aka long int}\x1b[m\x1b[K\n'}
+[1.519809] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:29:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[1.519840] (my_cpp_pkg) StderrLine: {'line': b'   29 |         RCLCPP_INFO(this->get_logger(), "Number Received: \x1b[01;36m\x1b[K%d\x1b[m\x1b[K", msg->data);\n'}
+[1.519871] (my_cpp_pkg) StderrLine: {'line': b'      |                                                           \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[1.519901] (my_cpp_pkg) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[1.519932] (my_cpp_pkg) StderrLine: {'line': b'      |                                                            \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[1.519962] (my_cpp_pkg) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[1.604608] (-) TimerEvent: {}
+[1.704931] (-) TimerEvent: {}
+[1.805259] (-) TimerEvent: {}
+[1.905633] (-) TimerEvent: {}
+[2.005956] (-) TimerEvent: {}
+[2.106311] (-) TimerEvent: {}
+[2.206668] (-) TimerEvent: {}
+[2.306991] (-) TimerEvent: {}
+[2.407379] (-) TimerEvent: {}
+[2.507808] (-) TimerEvent: {}
+[2.608135] (-) TimerEvent: {}
+[2.708480] (-) TimerEvent: {}
+[2.808813] (-) TimerEvent: {}
+[2.909138] (-) TimerEvent: {}
+[3.009463] (-) TimerEvent: {}
+[3.109820] (-) TimerEvent: {}
+[3.210077] (-) TimerEvent: {}
+[3.310342] (-) TimerEvent: {}
+[3.410595] (-) TimerEvent: {}
+[3.510920] (-) TimerEvent: {}
+[3.611242] (-) TimerEvent: {}
+[3.711561] (-) TimerEvent: {}
+[3.811874] (-) TimerEvent: {}
+[3.912134] (-) TimerEvent: {}
+[4.012459] (-) TimerEvent: {}
+[4.112824] (-) TimerEvent: {}
+[4.213186] (-) TimerEvent: {}
+[4.313477] (-) TimerEvent: {}
+[4.413752] (-) TimerEvent: {}
+[4.514044] (-) TimerEvent: {}
+[4.614309] (-) TimerEvent: {}
+[4.714623] (-) TimerEvent: {}
+[4.814949] (-) TimerEvent: {}
+[4.915254] (-) TimerEvent: {}
+[5.015607] (-) TimerEvent: {}
+[5.115926] (-) TimerEvent: {}
+[5.216247] (-) TimerEvent: {}
+[5.300457] (my_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable number_counter\x1b[0m\n'}
+[5.316417] (-) TimerEvent: {}
+[5.416771] (-) TimerEvent: {}
+[5.517173] (-) TimerEvent: {}
+[5.545467] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target number_counter\n'}
+[5.552056] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[5.584532] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[5.596123] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg'], 'cwd': '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farhan-sw'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farhan-sw'), ('OLDPWD', '/home/farhan-sw'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1142'), ('SYSTEMD_EXEC_PID', '1638'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4803'), ('COLCON_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farhan-sw'), ('JOURNAL_STREAM', '8:32694'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farhan-sw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Voodoo:@/tmp/.ICE-unix/1603,unix/Voodoo:/tmp/.ICE-unix/1603'), ('INVOCATION_ID', '9c9bedc99bce4f9688823b72c9588c51'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:51a4217c-8eae-409b-a36a-cb2edb41e5c8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[5.605310] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.606043] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node\n'}
+[5.606134] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station\n'}
+[5.606343] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone\n'}
+[5.606484] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter\n'}
+[5.610776] (my_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter" to ""\n'}
+[5.610925] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[5.610988] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[5.611038] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[5.611085] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[5.611131] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[5.611176] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[5.611250] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[5.611292] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[5.611333] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[5.611374] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[5.611414] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[5.611454] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[5.611494] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[5.611534] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[5.611574] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[5.612546] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[5.617475] (-) TimerEvent: {}
+[5.642143] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[5.642631] (-) EventReactorShutdown: {}
