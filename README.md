@@ -1,5 +1,4 @@
 
-
 # ROS2 Setup and Development Guide
 
 ## Table of Contents
@@ -31,9 +30,9 @@
 10. [Intro](#intro)
 11. [Topics](#topics)
 
+---
 
-
-## Setup ([back](#table-of-contents))
+## Setup ([back to top](#table-of-contents))
 
 ### Setup Terminator
 ```bash
@@ -57,7 +56,7 @@ source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 source ~/Documents/Github/learn-ros2/section3/ros2_ws/install/setup.bash
 ```
 
-## Create Workspace ([back](#table-of-contents))
+## Create Workspace ([back to top](#table-of-contents))
 Make a folder:
 ```bash
 mkdir -p ~/Documents/Github/learn-ros2/section3/ros2_ws/src
@@ -78,7 +77,7 @@ Add the following line:
 source ~/Documents/Github/learn-ros2/section3/ros2_ws/install/setup.bash
 ```
 
-## Build Package ([back](#table-of-contents))
+## Build Package ([back to top](#table-of-contents))
 
 ### All Packages
 ```bash
@@ -96,7 +95,7 @@ Allowing to run the node without rebuilding the package:
 colcon build --packages-select my_py_pkg --symlink-install
 ```
 
-## Python Node ([back](#table-of-contents))
+## Python Node ([back to top](#table-of-contents))
 
 ### Set Executable
 ```bash
@@ -152,7 +151,7 @@ Go to package.xml and add the dependency:
 colcon build --packages-select my_py_pkg --symlink-install
 ```
 
-## C++ Node ([back](#table-of-contents))
+## C++ Node ([back to top](#table-of-contents))
 
 ### Add Path to ROS2 Installation
 ```bash
@@ -203,7 +202,7 @@ install(TARGETS
 )
 ```
 
-## ROS 2 Command Line Tools ([back](#table-of-contents))
+## ROS 2 Command Line Tools ([back to top](#table-of-contents))
 
 ### Run Package
 ```bash
@@ -225,7 +224,7 @@ ros2 node info /<node_name>
 ros2 run <package_name> <executable_name> --ros-args -r __node:=<new_node_name>
 ```
 
-## Colcon ([back](#table-of-contents))
+## Colcon ([back to top](#table-of-contents))
 
 ### Add Bash Auto Completion
 To add bash auto completion for colcon, add the following line to your .bashrc file:
@@ -249,7 +248,7 @@ Example:
 chmod +x src/<package_name>/scripts/<file_name>.py
 ```
 
-## RQT and rqt_graph
+## RQT and rqt_graph ([back to top](#table-of-contents))
 
 ### Open rqt
 ```bash
@@ -261,7 +260,7 @@ rqt
 rqt_graph
 ```
 
-## TurtleSim
+## TurtleSim ([back to top](#table-of-contents))
 Simulation of a turtle that can move in a 2D plane.
 
 ### Install TurtleSim
@@ -269,7 +268,18 @@ Simulation of a turtle that can move in a 2D plane.
 sudo apt-get install ros-humble-turtlesim
 ```
 
-## Topics
+## Intro ([back to top](#table-of-contents))
+It is now the time to explore ROS communication features. At the end of this section you will be able to make your nodes communicate between each other, using ROS2 Topics.
+
+Here’s what you’ll do in this section:
+- Understand what is a ROS2 topic thanks to a real-life analogy
+- Write your own Topic (publisher/subscriber) in both Python and Cpp
+- Debug topics with ROS2 tools
+- Experiment on Turtlesim
+
+And finally, you’ll work on an activity to practice on everything you’ve seen until this point.
+
+## Topics ([back to top](#table-of-contents))
 
 ### View Example MSG Type
 ```bash
@@ -290,4 +300,7 @@ ros2 topic info /<topic_name>
 To see the messages being published to a topic, you can use the following command:
 ```bash
 ros2 topic echo /<topic_name>
-``` 
+```
+```
+
+This format ensures the links in the Table of Contents work correctly, taking you to the respective section when clicked.
