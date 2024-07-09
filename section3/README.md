@@ -80,3 +80,44 @@ go to package.xml and add the dependency
 ```bash
 colcon build --packages-select my_py_pkg --symlink-install
 ```
+
+# Create Node in C++
+## Create a new package
+```bash
+ros2 pkg create --build-type ament_cmake my_cpp_pkg
+```
+
+## Create a new node
+```bash
+touch my_cpp_pkg/src/my_first_node.cpp
+```
+
+## Have a Dependency?
+go to package.xml and add the dependency
+```xml
+  <depend>rclcpp</depend>
+  <depend>example_interfaces</depend>
+```
+
+go to cmake_lists.txt and add the dependency
+```cmake
+  find dependencies
+  find_package(ament_cmake REQUIRED)
+  find_package(rclcpp REQUIRED)
+  find_package(example_interfaces REQUIRED)
+```
+
+## Create a new executable
+```cmake
+add_executable(robot_news_station src/robot_news_station.cpp)
+ament_target_dependencies(robot_news_station rclcpp example_interfaces)
+```
+
+## Install the executable
+```cmake
+install(TARGETS
+  cpp_node
+  robot_news_station
+  DESTINATION lib/${PROJECT_NAME}
+)
+```

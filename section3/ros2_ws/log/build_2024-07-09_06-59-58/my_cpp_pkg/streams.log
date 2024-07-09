@@ -1,0 +1,28 @@
+[0.007s] Invoking command in '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg -- -j16 -l16
+[0.032s] [35m[1mConsolidate compiler generated dependencies of target robot_news_station[0m
+[0.040s] [ 50%] Built target cpp_node
+[0.046s] [ 75%] [32mBuilding CXX object CMakeFiles/robot_news_station.dir/src/robot_news_station.cpp.o[0m
+[2.619s] [100%] [32m[1mLinking CXX executable robot_news_station[0m
+[2.767s] [100%] Built target robot_news_station
+[2.775s] Invoked command in '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg -- -j16 -l16
+[2.796s] Invoking command in '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg
+[2.801s] -- Install configuration: ""
+[2.801s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[2.801s] -- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station
+[2.802s] -- Set runtime path of "/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station" to ""
+[2.802s] -- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[2.802s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[2.802s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[2.802s] -- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[2.802s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[2.802s] -- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[2.802s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[2.802s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[2.802s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[2.802s] -- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[2.802s] -- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[2.802s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[2.802s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[2.802s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[2.802s] -- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[2.803s] Invoked command in '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_cpp_pkg
