@@ -10,20 +10,60 @@ pip install setuptools==58.2.0
 ```
 
 ## Setup Bash
+```bash
 gedit ~/.bashrc
-### Add the following lines
+```
+an add the following lines
+
+```bash
 source /opt/ros/humble/setup.bash
 source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+```
 
-### Add the following lines corresponding to the ROS2 workspace
+for new ros2 workspace
+```bash
 source ~/Documents/Github/learn-ros2/section3/ros2_ws/install/setup.bash
+```
+
+# Create Workspace
+Make a folder
+```bash
+mkdir ~/Documents/Github/learn-ros2/section3/ros2_ws/src
+```
+after that, build with colcon
+```bash
+colcon build
+```
+Note: run in the workspace folder, e.g. ~/Documents/Github/learn-ros2/section3/ros2_ws
+
+Add the setup.bash to the bashrc in ros2_ws/install/setup.bash
+```bash
+gedit ~/.bashrc
+```
+an add the following lines
+
+```bash
+source ~/Documents/Github/learn-ros2/section3/ros2_ws/install/setup.bash
+```
+
 
 
 # Build pkg
 ## All packages
+```bash
 colcon build
+```
+
 ## Specific package
+```bash
 colcon build --packages-select my_py_pkg
+```
+
+## Symlink (Only for Python)
+Allowing to run the node without rebuilding the package
+```bash
+colcon build --packages-select my_py_pkg --symlink-install
+```
 
 # Python Node
 ## Set Executable
