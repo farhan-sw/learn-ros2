@@ -193,6 +193,34 @@ add_executable(robot_news_station src/robot_news_station.cpp)
 ament_target_dependencies(robot_news_station rclcpp example_interfaces)
 ```
 
+#### Template
+```cmake
+cmake_minimum_required(VERSION 3.8)
+project(my_cpp_pkg)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(example_interfaces REQUIRED)
+
+# Make an executable
+add_executable(add_two_ints_server src/add_two_ints_server.cpp)
+ament_target_dependencies(add_two_ints_server rclcpp example_interfaces)
+
+# Install the executable
+install(TARGETS
+  add_two_ints_server
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+ament_package()
+
+```
+
 ### Install the Executable
 ```cmake
 install(TARGETS
