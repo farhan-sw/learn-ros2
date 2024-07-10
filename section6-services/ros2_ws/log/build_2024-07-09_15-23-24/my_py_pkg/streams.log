@@ -1,0 +1,37 @@
+[0.391s] Invoking command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/build install --record /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[0.537s] running egg_info
+[0.537s] creating ../../build/my_py_pkg/my_py_pkg.egg-info
+[0.537s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.538s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.538s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.538s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.538s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.538s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.540s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.540s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.540s] running build
+[0.541s] running build_py
+[0.541s] creating /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/build
+[0.541s] creating /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/build/lib
+[0.541s] creating /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.541s] copying my_py_pkg/__init__.py -> /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.541s] copying my_py_pkg/add_two_ints_server.py -> /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.541s] running install
+[0.541s] running install_lib
+[0.542s] creating /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.542s] copying /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.542s] copying /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_server.py -> /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.542s] byte-compiling /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc
+[0.543s] byte-compiling /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/add_two_ints_server.py to add_two_ints_server.cpython-310.pyc
+[0.543s] running install_data
+[0.543s] creating /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/share/ament_index
+[0.543s] creating /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/share/ament_index/resource_index
+[0.543s] creating /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.543s] copying resource/my_py_pkg -> /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.543s] copying package.xml -> /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[0.543s] running install_egg_info
+[0.545s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[0.546s] running install_scripts
+[0.563s] Installing add_two_ints_server script to /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.563s] writing list of installed files to '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/install.log'
+[0.579s] Invoked command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/build install --record /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data

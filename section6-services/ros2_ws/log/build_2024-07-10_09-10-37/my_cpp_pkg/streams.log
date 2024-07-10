@@ -1,0 +1,75 @@
+[0.007s] Invoking command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg -- -j16 -l16
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_client_no_oop[0m
+[0.048s] [ 50%] Built target add_two_ints_server
+[0.050s] [ 75%] [32mBuilding CXX object CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o[0m
+[1.659s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.659s]                  from [01m[K/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:1[m[K:
+[1.659s] [01m[K/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.659s] [01m[K/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:26:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 5 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[1.659s]    26 |         RCLCPP_INFO(node->get_logger(), [01;35m[K"%ld + %ld = %ld"[m[K, [32m[K(int)request->a[m[K, (int)request->b, future.get()->sum);
+[1.659s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~~~[m[K
+[1.659s]       |                                                            [32m[K|[m[K
+[1.659s]       |                                                            [32m[Kint[m[K
+[1.659s] [01m[K/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:26:44:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[1.659s]    26 |         RCLCPP_INFO(node->get_logger(), "[01;36m[K%ld[m[K + %ld = %ld", (int)request->a, (int)request->b, future.get()->sum);
+[1.659s]       |                                          [01;36m[K~~^[m[K
+[1.659s]       |                                            [01;36m[K|[m[K
+[1.659s]       |                                            [01;36m[Klong int[m[K
+[1.659s]       |                                          [32m[K%d[m[K
+[1.659s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.660s]                  from [01m[K/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:1[m[K:
+[1.660s] [01m[K/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:26:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 6 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[1.660s]    26 |         RCLCPP_INFO(node->get_logger(), [01;35m[K"%ld + %ld = %ld"[m[K, (int)request->a, [32m[K(int)request->b[m[K, future.get()->sum);
+[1.660s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~[m[K                   [32m[K~~~~~~~~~~~~~~~[m[K
+[1.660s]       |                                                                             [32m[K|[m[K
+[1.660s]       |                                                                             [32m[Kint[m[K
+[1.660s] [01m[K/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:26:50:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[1.660s]    26 |         RCLCPP_INFO(node->get_logger(), "%ld + [01;36m[K%ld[m[K = %ld", (int)request->a, (int)request->b, future.get()->sum);
+[1.660s]       |                                                [01;36m[K~~^[m[K
+[1.660s]       |                                                  [01;36m[K|[m[K
+[1.660s]       |                                                  [01;36m[Klong int[m[K
+[1.660s]       |                                                [32m[K%d[m[K
+[2.452s] [100%] [32m[1mLinking CXX executable add_two_ints_client_no_oop[0m
+[2.554s] [100%] Built target add_two_ints_client_no_oop
+[2.562s] Invoked command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg -- -j16 -l16
+[2.588s] Invoking command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg
+[2.593s] -- Install configuration: ""
+[2.593s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server
+[2.593s] -- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_no_oop
+[2.593s] -- Set runtime path of "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_no_oop" to ""
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[2.594s] -- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[2.594s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[2.595s] Invoked command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg
