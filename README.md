@@ -397,4 +397,14 @@ File->Preferences->Settings->Extensions->Python->Python Path
 ]
 ```
 
+### Used in a C++ Node
+Edit the vscode setting c_cpp_properties.json:
+```json
+"includePath": [
+        "${workspaceFolder}/**",
+        "/opt/ros/humble/include/**",
+        "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces/include/**",
+      ],
+```
+
 

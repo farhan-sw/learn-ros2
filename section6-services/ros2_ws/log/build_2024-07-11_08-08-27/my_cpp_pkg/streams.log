@@ -1,0 +1,31 @@
+[0.007s] Invoking command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg -- -j16 -l16
+[0.042s] [ 62%] [32mBuilding CXX object CMakeFiles/hw_status_publisher.dir/src/hw_status_publisher.cpp.o[0m
+[0.043s] [ 75%] Built target add_two_ints_server
+[0.043s] [ 75%] Built target add_two_ints_client
+[0.043s] [ 87%] Built target add_two_ints_client_no_oop
+[2.629s] [100%] [32m[1mLinking CXX executable hw_status_publisher[0m
+[2.734s] [100%] Built target hw_status_publisher
+[2.741s] Invoked command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg -- -j16 -l16
+[2.767s] Invoking command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg
+[2.771s] -- Install configuration: ""
+[2.771s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server
+[2.771s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_no_oop
+[2.771s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client
+[2.771s] -- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hw_status_publisher
+[2.773s] -- Set runtime path of "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hw_status_publisher" to ""
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[2.773s] -- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[2.774s] Invoked command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg

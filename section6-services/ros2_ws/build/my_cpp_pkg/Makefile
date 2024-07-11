@@ -236,6 +236,19 @@ add_two_ints_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_client.dir/build.make CMakeFiles/add_two_ints_client.dir/build
 .PHONY : add_two_ints_client/fast
 
+#=============================================================================
+# Target rules for targets named hw_status_publisher
+
+# Build rule for target.
+hw_status_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw_status_publisher
+.PHONY : hw_status_publisher
+
+# fast build rule for target.
+hw_status_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_status_publisher.dir/build.make CMakeFiles/hw_status_publisher.dir/build
+.PHONY : hw_status_publisher/fast
+
 src/add_two_ints_client.o: src/add_two_ints_client.cpp.o
 .PHONY : src/add_two_ints_client.o
 
@@ -308,6 +321,30 @@ src/add_two_ints_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/add_two_ints_server.dir/build.make CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.s
 .PHONY : src/add_two_ints_server.cpp.s
 
+src/hw_status_publisher.o: src/hw_status_publisher.cpp.o
+.PHONY : src/hw_status_publisher.o
+
+# target to build an object file
+src/hw_status_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_status_publisher.dir/build.make CMakeFiles/hw_status_publisher.dir/src/hw_status_publisher.cpp.o
+.PHONY : src/hw_status_publisher.cpp.o
+
+src/hw_status_publisher.i: src/hw_status_publisher.cpp.i
+.PHONY : src/hw_status_publisher.i
+
+# target to preprocess a source file
+src/hw_status_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_status_publisher.dir/build.make CMakeFiles/hw_status_publisher.dir/src/hw_status_publisher.cpp.i
+.PHONY : src/hw_status_publisher.cpp.i
+
+src/hw_status_publisher.s: src/hw_status_publisher.cpp.s
+.PHONY : src/hw_status_publisher.s
+
+# target to generate assembly for a file
+src/hw_status_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_status_publisher.dir/build.make CMakeFiles/hw_status_publisher.dir/src/hw_status_publisher.cpp.s
+.PHONY : src/hw_status_publisher.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -326,6 +363,7 @@ help:
 	@echo "... add_two_ints_client"
 	@echo "... add_two_ints_client_no_oop"
 	@echo "... add_two_ints_server"
+	@echo "... hw_status_publisher"
 	@echo "... src/add_two_ints_client.o"
 	@echo "... src/add_two_ints_client.i"
 	@echo "... src/add_two_ints_client.s"
@@ -335,6 +373,9 @@ help:
 	@echo "... src/add_two_ints_server.o"
 	@echo "... src/add_two_ints_server.i"
 	@echo "... src/add_two_ints_server.s"
+	@echo "... src/hw_status_publisher.o"
+	@echo "... src/hw_status_publisher.i"
+	@echo "... src/hw_status_publisher.s"
 .PHONY : help
 
 

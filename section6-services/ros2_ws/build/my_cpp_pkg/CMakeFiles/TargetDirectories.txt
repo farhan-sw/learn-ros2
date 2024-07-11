@@ -3,6 +3,7 @@
 /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg/CMakeFiles/add_two_ints_server.dir
 /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg/CMakeFiles/add_two_ints_client_no_oop.dir
 /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg/CMakeFiles/add_two_ints_client.dir
+/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg/CMakeFiles/hw_status_publisher.dir
 /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg/CMakeFiles/test.dir
 /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg/CMakeFiles/edit_cache.dir
 /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg/CMakeFiles/rebuild_cache.dir
