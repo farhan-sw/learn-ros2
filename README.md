@@ -29,6 +29,8 @@
 9. [TurtleSim](#turtlesim)
 10. [Intro](#intro)
 11. [Topics](#topics)
+12. [Make a Custom Msg and Srv](#make-a-custom-msg-and-srv)
+   - [Custom Msg](#custom-msg)
 
 ---
 
@@ -329,6 +331,70 @@ To see the messages being published to a topic, you can use the following comman
 ```bash
 ros2 topic echo /<topic_name>
 ```
+
+
+# Make a Custom Msg and Srv
+
+## Custom Msg
+create a new package:
+```bash
+ros2 pkg create my_robot_interfaces
 ```
 
-This format ensures the links in the Table of Contents work correctly, taking you to the respective section when clicked.
+Delete the include and src folders
+```bash
+rm -r my_robot_interfaces/include
+rm -r my_robot_interfaces/src
+```
+Make a msg/ folder:
+```bash
+mkdir my_robot_interfaces/msg
+```
+
+Configure package.xml, add a new 3 lines:
+```xml
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+```
+
+Configure the CMakeLists.txt:
+```cmake
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+```
+
+Go to msg/ folder and create a new file:
+```bash
+touch my_robot_interfaces/msg/HardwareStatus.msg
+```
+
+Edit the HardwareStatus.msg file, example:
+```bash
+int64 temperature
+bool are_motors_ready
+string debug_message
+```
+
+Generate the source code of the message in CMakelists.txt:
+```cmake
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/HardwareStatus.msg"
+)
+```
+
+Build the package
+```bash
+colcon build --packages-select my_robot_interfaces
+```
+
+### Used in a Python Node
+Add path to the VSCode settings.json:
+File->Preferences->Settings->Extensions->Python->Python Path
+```json
+"python.autoComplete.extraPaths": [
+    "/home/your_user/Documents/Github/learn-ros2/section3/ros2_ws/install/my_robot_interfaces/lib/python3.8/site-packages"
+]
+```
+
+
