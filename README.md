@@ -30,7 +30,7 @@
 10. [Intro](#intro)
 11. [Topics](#topics)
 12. [Make a Custom Msg and Srv](#make-a-custom-msg-and-srv)
-   - [Custom Msg](#custom-msg)
+      - [Custom Msg](#custom-msg)
 
 ---
 
@@ -334,6 +334,7 @@ ros2 topic echo /<topic_name>
 
 
 # Make a Custom Msg and Srv
+[back to top](#table-of-contents)
 
 ## Custom Msg
 create a new package:
@@ -405,6 +406,25 @@ Edit the vscode setting c_cpp_properties.json:
         "/opt/ros/humble/include/**",
         "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces/include/**",
       ],
+```
+
+## Custom Srv
+Using a step before, inser srv/ folder in robot_interfaces package:
+```bash
+mkdir my_robot_interfaces/srv
+```
+
+Create a new file in srv/ folder:
+```bash
+touch my_robot_interfaces/srv/ComputeRectangleArea.srv
+```
+
+Edit package.xml and CMAkeLists.txt as before. Add the srv in CMakelists.txt:
+```cmake
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/HardwareStatus.msg"
+  "srv/ComputeRectangleArea.srv"
+)
 ```
 
 
