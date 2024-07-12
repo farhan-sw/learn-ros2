@@ -1,0 +1,22 @@
+[0.351s] Invoking command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg': CMAKE_PREFIX_PATH=/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg PYTHONPATH=/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/build --no-deps symlink_data
+[0.506s] running develop
+[0.592s] running egg_info
+[0.592s] writing my_py_pkg.egg-info/PKG-INFO
+[0.592s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[0.592s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[0.592s] writing requirements to my_py_pkg.egg-info/requires.txt
+[0.592s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[0.593s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.594s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[0.595s] running build_ext
+[0.595s] Creating /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)
+[0.595s] Installing add_two_ints_client script to /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.595s] Installing add_two_ints_client_no_oop script to /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.595s] Installing add_two_ints_server script to /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.596s] Installing battery script to /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.596s] Installing hardware_status_publisher script to /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.596s] Installing led_panel script to /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.596s] 
+[0.596s] Installed /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg
+[0.596s] running symlink_data
+[0.613s] Invoked command in '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg PYTHONPATH=/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_py_pkg/build --no-deps symlink_data

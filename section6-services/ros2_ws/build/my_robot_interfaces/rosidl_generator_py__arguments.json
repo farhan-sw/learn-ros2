@@ -3,7 +3,11 @@
   "output_dir": "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_generator_py/my_robot_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/HardwareStatus.idl"
+    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/HardwareStatus.idl",
+    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/LedStates.idl",
+    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/BooleanArray.idl",
+    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/ComputeRectangleArea.idl",
+    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/SetLed.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -19,6 +23,10 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/HardwareStatus.idl"
+    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/HardwareStatus.idl",
+    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/LedStates.idl",
+    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/BooleanArray.idl",
+    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/ComputeRectangleArea.idl",
+    "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/SetLed.idl"
   ]
 }
