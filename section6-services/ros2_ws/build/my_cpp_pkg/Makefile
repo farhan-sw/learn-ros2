@@ -249,6 +249,19 @@ hw_status_publisher/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_status_publisher.dir/build.make CMakeFiles/hw_status_publisher.dir/build
 .PHONY : hw_status_publisher/fast
 
+#=============================================================================
+# Target rules for targets named number_counter
+
+# Build rule for target.
+number_counter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 number_counter
+.PHONY : number_counter
+
+# fast build rule for target.
+number_counter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/build
+.PHONY : number_counter/fast
+
 src/add_two_ints_client.o: src/add_two_ints_client.cpp.o
 .PHONY : src/add_two_ints_client.o
 
@@ -345,6 +358,30 @@ src/hw_status_publisher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw_status_publisher.dir/build.make CMakeFiles/hw_status_publisher.dir/src/hw_status_publisher.cpp.s
 .PHONY : src/hw_status_publisher.cpp.s
 
+src/number_counter.o: src/number_counter.cpp.o
+.PHONY : src/number_counter.o
+
+# target to build an object file
+src/number_counter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/src/number_counter.cpp.o
+.PHONY : src/number_counter.cpp.o
+
+src/number_counter.i: src/number_counter.cpp.i
+.PHONY : src/number_counter.i
+
+# target to preprocess a source file
+src/number_counter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/src/number_counter.cpp.i
+.PHONY : src/number_counter.cpp.i
+
+src/number_counter.s: src/number_counter.cpp.s
+.PHONY : src/number_counter.s
+
+# target to generate assembly for a file
+src/number_counter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/src/number_counter.cpp.s
+.PHONY : src/number_counter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -364,6 +401,7 @@ help:
 	@echo "... add_two_ints_client_no_oop"
 	@echo "... add_two_ints_server"
 	@echo "... hw_status_publisher"
+	@echo "... number_counter"
 	@echo "... src/add_two_ints_client.o"
 	@echo "... src/add_two_ints_client.i"
 	@echo "... src/add_two_ints_client.s"
@@ -376,6 +414,9 @@ help:
 	@echo "... src/hw_status_publisher.o"
 	@echo "... src/hw_status_publisher.i"
 	@echo "... src/hw_status_publisher.s"
+	@echo "... src/number_counter.o"
+	@echo "... src/number_counter.i"
+	@echo "... src/number_counter.s"
 .PHONY : help
 
 

@@ -1,0 +1,124 @@
+[0.000000] (-) TimerEvent: {}
+[0.000161] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000180] (-) JobUnselected: {'identifier': 'my_robot_bringup'}
+[0.000196] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.000209] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict([('my_robot_interfaces', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces')])}
+[0.000224] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.006500] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.006697] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.007119] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg', '--', '-j16', '-l16'], 'cwd': '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farhan-sw'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farhan-sw'), ('OLDPWD', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_robot_bringup'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1091'), ('SYSTEMD_EXEC_PID', '1560'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8865'), ('COLCON_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farhan-sw'), ('JOURNAL_STREAM', '8:23838'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farhan-sw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Voodoo:@/tmp/.ICE-unix/1537,unix/Voodoo:/tmp/.ICE-unix/1537'), ('INVOCATION_ID', '735d8d981aca4bf4b4c44a5399ea0fc5'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:359e59fd-b041-4372-8707-9b1a7770b322'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.022862] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099701] (-) TimerEvent: {}
+[0.103941] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.121072] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.122573] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.125919] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.132644] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.142010] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.175775] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.176604] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199840] (-) TimerEvent: {}
+[0.243617] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.299987] (-) TimerEvent: {}
+[0.335513] (my_cpp_pkg) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[0.400149] (-) TimerEvent: {}
+[0.418507] (my_cpp_pkg) StdoutLine: {'line': b'-- Found my_robot_interfaces: 0.0.0 (/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake)\n'}
+[0.469062] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.481443] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.482515] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg\n'}
+[0.499838] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target add_two_ints_server\x1b[0m\n'}
+[0.499980] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target add_two_ints_client\x1b[0m\n'}
+[0.500038] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target add_two_ints_client_no_oop\x1b[0m\n'}
+[0.500076] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hw_status_publisher\x1b[0m\n'}
+[0.500209] (-) TimerEvent: {}
+[0.505828] (my_cpp_pkg) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o\x1b[0m\n'}
+[0.511342] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] Built target add_two_ints_client\n'}
+[0.511485] (my_cpp_pkg) StdoutLine: {'line': b'[ 70%] Built target add_two_ints_client_no_oop\n'}
+[0.511529] (my_cpp_pkg) StdoutLine: {'line': b'[ 70%] Built target add_two_ints_server\n'}
+[0.512810] (my_cpp_pkg) StdoutLine: {'line': b'[ 90%] Built target hw_status_publisher\n'}
+[0.600386] (-) TimerEvent: {}
+[0.700700] (-) TimerEvent: {}
+[0.801030] (-) TimerEvent: {}
+[0.901357] (-) TimerEvent: {}
+[1.001607] (-) TimerEvent: {}
+[1.101938] (-) TimerEvent: {}
+[1.202252] (-) TimerEvent: {}
+[1.302567] (-) TimerEvent: {}
+[1.402889] (-) TimerEvent: {}
+[1.503193] (-) TimerEvent: {}
+[1.603536] (-) TimerEvent: {}
+[1.703874] (-) TimerEvent: {}
+[1.804203] (-) TimerEvent: {}
+[1.904544] (-) TimerEvent: {}
+[2.004868] (-) TimerEvent: {}
+[2.105214] (-) TimerEvent: {}
+[2.205577] (-) TimerEvent: {}
+[2.305883] (-) TimerEvent: {}
+[2.406194] (-) TimerEvent: {}
+[2.506509] (-) TimerEvent: {}
+[2.606835] (-) TimerEvent: {}
+[2.707161] (-) TimerEvent: {}
+[2.807504] (-) TimerEvent: {}
+[2.907836] (-) TimerEvent: {}
+[3.008156] (-) TimerEvent: {}
+[3.108502] (-) TimerEvent: {}
+[3.208818] (-) TimerEvent: {}
+[3.309148] (-) TimerEvent: {}
+[3.409485] (-) TimerEvent: {}
+[3.509802] (-) TimerEvent: {}
+[3.610141] (-) TimerEvent: {}
+[3.710463] (-) TimerEvent: {}
+[3.810757] (-) TimerEvent: {}
+[3.911079] (-) TimerEvent: {}
+[4.011382] (-) TimerEvent: {}
+[4.111674] (-) TimerEvent: {}
+[4.211956] (-) TimerEvent: {}
+[4.312242] (-) TimerEvent: {}
+[4.412530] (-) TimerEvent: {}
+[4.512815] (-) TimerEvent: {}
+[4.613107] (-) TimerEvent: {}
+[4.713410] (-) TimerEvent: {}
+[4.813702] (-) TimerEvent: {}
+[4.914000] (-) TimerEvent: {}
+[5.014229] (-) TimerEvent: {}
+[5.114471] (-) TimerEvent: {}
+[5.214784] (-) TimerEvent: {}
+[5.315087] (-) TimerEvent: {}
+[5.415385] (-) TimerEvent: {}
+[5.515706] (-) TimerEvent: {}
+[5.616041] (-) TimerEvent: {}
+[5.716419] (-) TimerEvent: {}
+[5.747084] (my_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable number_counter\x1b[0m\n'}
+[5.816585] (-) TimerEvent: {}
+[5.916900] (-) TimerEvent: {}
+[5.993520] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target number_counter\n'}
+[6.000015] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[6.017012] (-) TimerEvent: {}
+[6.044202] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[6.057107] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg'], 'cwd': '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'farhan-sw'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/farhan-sw'), ('OLDPWD', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_robot_bringup'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('MANAGERPID', '1091'), ('SYSTEMD_EXEC_PID', '1560'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8865'), ('COLCON_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'farhan-sw'), ('JOURNAL_STREAM', '8:23838'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'farhan-sw'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Voodoo:@/tmp/.ICE-unix/1537,unix/Voodoo:/tmp/.ICE-unix/1537'), ('INVOCATION_ID', '735d8d981aca4bf4b4c44a5399ea0fc5'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:359e59fd-b041-4372-8707-9b1a7770b322'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/build/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_robot_interfaces:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_cpp_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_py_pkg:/home/farhan-sw/Documents/Github/learn-ros2/section3/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[6.067755] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.068258] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server\n'}
+[6.068692] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_no_oop\n'}
+[6.068921] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client\n'}
+[6.069062] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hw_status_publisher\n'}
+[6.069269] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter\n'}
+[6.075295] (my_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter" to ""\n'}
+[6.075462] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[6.075542] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[6.075643] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[6.075708] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[6.075771] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[6.075836] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[6.075963] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[6.076031] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[6.076094] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[6.076213] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[6.076276] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[6.076317] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[6.076355] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[6.076392] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[6.076430] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[6.077413] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[6.117120] (-) TimerEvent: {}
+[6.130826] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[6.131506] (-) EventReactorShutdown: {}

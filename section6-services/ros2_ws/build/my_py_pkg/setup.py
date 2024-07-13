@@ -1,1 +1,0 @@
-/home/farhan-sw/Documents/Github/learn-ros2/section6-services/ros2_ws/src/my_py_pkg/setup.py

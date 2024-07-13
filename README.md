@@ -453,4 +453,115 @@ self->declare_parameter("my_param", 2);
 number = this->get_parameter("my_param").as_int();
 ```
 
+# ROS2 Launch File
+[back to top](#table-of-contents)
+
+## Setup a Launch File
+Create in one pkg
+```bash
+ros2 pkg create my_robot_bringup
+```
+"my_robot_bringup" is the name of the package and its community convention to name. "_bringup" is the name of the package that launches the robot.
+
+Setup the package folder:
+```bash
+mkdir my_robot_bringup/launch
+rm -r my_robot_bringup/src
+rm -r my_robot_bringup/include
+```
+
+Edit the cmakelists.txt:
+```cmake
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
+```
+
+## Create a Launch File
+Create a new file in launch/ folder:
+```bash
+touch my_robot_bringup/launch/number_app.launch.py
+```
+
+Make it executable:
+```bash
+chmod +x my_robot_bringup/launch/number_app.launch.py
+```
+
+Use a template:
+```python
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+def generate_launch_description():
+    ld = LaunchDescription()
+    
+    return ld
+```
+
+## How to Run a Launch File
+```bash
+ros2 launch my_robot_bringup number_app.launch.py
+```
+
+## Import Node in Launch File
+Add node in launch file:
+```python
+def generate_launch_description():
+    ld = LaunchDescription()
+    
+    number_publisher_node = Node(
+        package="my_py_pkg",
+        executable="number_publisher"
+    )
+    
+    number_counter_mode = Node(
+        package="my_cpp_pkg",
+        executable="number_counter"
+    )
+    
+    ld.add_action(number_publisher_node)
+    ld.add_action(number_counter_mode)
+    
+    
+    return ld
+```
+Edit the package.xml based on the dependencies of the nodes.
+```xml
+<exec_depend>my_py_pkg</exec_depend>
+<exec_depend>my_cpp_pkg</exec_depend>
+```
+
+## Configure the Node in Launch File
+Edit the node in launch file:
+```python
+
+remap_number_topic =  ("number", "my_number")
+
+    number_publisher_node = Node(
+        package="my_py_pkg",
+        executable="number_publisher"
+        remappings=[
+          # Remap the topic name
+          remap_number_topic
+        ],
+
+        # Set the parameter
+        parameters=[{"number_to_publish": 42},
+                    {"frequency_hz": 1.0}]
+    )
+    
+    number_counter_mode = Node(
+        package="my_cpp_pkg",
+        executable="number_counter"
+        remappings=[
+          # Remap the topic name
+          remap_number_topic
+      ]
+    )
+```
+
+
+
 

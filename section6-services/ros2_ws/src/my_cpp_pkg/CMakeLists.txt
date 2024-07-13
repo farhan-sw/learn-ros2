@@ -24,12 +24,16 @@ ament_target_dependencies(add_two_ints_client rclcpp example_interfaces)
 add_executable(hw_status_publisher src/hw_status_publisher.cpp)
 ament_target_dependencies(hw_status_publisher rclcpp my_robot_interfaces)
 
+add_executable(number_counter src/number_counter.cpp)
+ament_target_dependencies(number_counter rclcpp example_interfaces)
+
 # Install the executable
 install(TARGETS
   add_two_ints_server
   add_two_ints_client_no_oop
   add_two_ints_client
   hw_status_publisher
+  number_counter
   DESTINATION lib/${PROJECT_NAME}
 )
 

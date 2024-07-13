@@ -26,6 +26,7 @@ setup(
             "hardware_status_publisher = my_py_pkg.hw_status_publisher:main",
             "battery = my_py_pkg.battery:main",
             "led_panel = my_py_pkg.led_panel:main",
+            "number_publisher = my_py_pkg.number_publisher:main",
         ],
     },
 )
