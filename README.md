@@ -31,6 +31,7 @@
 11. [Topics](#topics)
 12. [Make a Custom Msg and Srv](#make-a-custom-msg-and-srv)
       - [Custom Msg](#custom-msg)
+13. [ROS2 Parameter](#ros2-parameter)
 
 ---
 
@@ -425,6 +426,31 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HardwareStatus.msg"
   "srv/ComputeRectangleArea.srv"
 )
+```
+
+# ROS2 Parameter
+[back to top](#table-of-contents)
+
+## Set Parameter in Terminal
+```bash
+ros2 run my_py_pkg my_first_node --ros-args -p my_param:=42
+```
+
+## Get Parameter in Python
+```python
+self.declare_parameter('my_param', 2)
+my_param = self.get_parameter('my_param').value
+```
+
+if you want to set multiple parameters:
+```bash
+ros2 run my_py_pkg my_first_node --ros-args -p my_param:=42 -p my_param2:=43
+```
+
+## Get Parameter in C++
+```cpp
+self->declare_parameter("my_param", 2);
+number = this->get_parameter("my_param").as_int();
 ```
 
 
