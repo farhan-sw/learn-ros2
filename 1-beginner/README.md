@@ -46,6 +46,10 @@ sudo apt install terminator -y
 ```bash
 pip install setuptools==58.2.0
 ```
+### Setup Ubuntu
+```bash
+sudo apt install python3-colcon-common-extensions
+```
 
 ### Setup Bash
 ```bash
