@@ -39,14 +39,17 @@ class CountUntilServerNode(Node): # MODIFY NAME
         self.get_logger().info(f"Executing, target: {target_number}, period: {period}")
         
         # Start executing the action
+        feedback = CountUntil.Feedback()                        # Create Feedback Object
         counter = 0
         for i in range(target_number):
             counter += 1
             self.get_logger().info(f"Count: {counter}")
+            feedback.current_number = counter                   # Update Feedback
+            goal_handle.publish_feedback(feedback)              # Publish Feedback
             time.sleep(period)
             
         # Once Done, set goal final state
-        goal_handle.succeed()
+        goal_handle.abort()
         
         # And send the result
         result = CountUntil.Result()

@@ -7,7 +7,7 @@ from myrobot_interfaces.action import CountUntil
 
 # Import Action
 from rclpy.action import ActionClient
-from rclpy.action.client import ClientGoalHandle
+from rclpy.action.client import ClientGoalHandle, GoalStatus
 
 
 class CountUntilClientNode(Node): 
@@ -31,7 +31,7 @@ class CountUntilClientNode(Node):
         # Send the goal
         self.get_logger().info(f"Sending Goal Request: {goal}")
         self.count_until_client_.\
-            send_goal_async(goal).\
+            send_goal_async(goal, feedback_callback=self.feedback_callback).\
                 add_done_callback(self.goal_response_callback)
 
     def goal_response_callback(self, future):
@@ -43,8 +43,17 @@ class CountUntilClientNode(Node):
             self.get_logger().warn("Goal Rejected")
             
     def goal_result_callback(self, future):
+        status = future.result().status
         result = future.result().result
+        if status == GoalStatus.STATUS_SUCCEEDED:
+            self.get_logger().info("Goal Succeeded")
+        elif status == GoalStatus.STATUS_ABORTED:
+            self.get_logger().error("Goal Aborted")
+        
         self.get_logger().info(f"Result: {result.reached_number}")
+    
+    def feedback_callback(self, feedback_msg):
+        self.get_logger().info(f"Received Feedback: {feedback_msg.feedback.current_number}")
 
 def main(args=None):
     rclpy.init(args=args)
