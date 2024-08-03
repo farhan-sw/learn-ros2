@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from rclpy.action import ActionServer, GoalResponse
+from rclpy.action import ActionServer, GoalResponse, CancelResponse
 from rclpy.action.server import ServerGoalHandle
 
 import time
@@ -16,6 +16,7 @@ class CountUntilServerNode(Node): # MODIFY NAME
                                                       CountUntil, 
                                                       "count_until", 
                                                       goal_callback=self.goal_callback,
+                                                      cancel_callback=self.cancel_callback,
                                                       execute_callback=self.execute_callback)
         # LOGGER
         self.get_logger().info("Count Until Server has been started.")
@@ -40,8 +41,15 @@ class CountUntilServerNode(Node): # MODIFY NAME
         
         # Start executing the action
         feedback = CountUntil.Feedback()                        # Create Feedback Object
+        result = CountUntil.Result()                        # Create Result Object          
         counter = 0
         for i in range(target_number):
+            if goal_handle.is_cancel_requested:
+                goal_handle.canceled()
+                self.get_logger().info("Goal Cancelled")
+                result.reached_number = counter
+                return result
+            
             counter += 1
             self.get_logger().info(f"Count: {counter}")
             feedback.current_number = counter                   # Update Feedback
@@ -52,9 +60,12 @@ class CountUntilServerNode(Node): # MODIFY NAME
         goal_handle.abort()
         
         # And send the result
-        result = CountUntil.Result()
         result.reached_number = counter
         return result
+
+    def cancel_callback(self, goal_handle: ServerGoalHandle):
+        self.get_logger().info("Goal Cancelled")
+        return CancelResponse.ACCEPT # or CancelResponse.REJECT
 
 def main(args=None):
     rclpy.init(args=args)

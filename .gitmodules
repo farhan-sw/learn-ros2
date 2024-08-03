@@ -1,0 +1,3 @@
+[submodule "axebot"]
+	path = 6-axebot/ros_ws/src/axebot
+	url = https://github.com/mateusmenezes95/axebot
